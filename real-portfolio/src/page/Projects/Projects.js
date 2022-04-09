@@ -12,13 +12,42 @@ function Projects() {
         })
     }, [])
 
+
+    function someProjects(){
+
+        if(windowSize>900){
+        return (
+            <div className="mt-10">
+                     <p className="mt-10">Some Projects:</p>
+                        <ul className="mt-10" style={{textAlign: "start"}}>
+                            <li>1) Scan application to insert data into your AMS.</li>
+                            <li>2) Email Reader, that can automate your workflow.</li>
+                            <li>3) Document Management System</li>
+                        </ul>
+            </div>
+        );}
+
+        if(windowSize<800){
+            return (
+                <div className="mt-10">
+                         <p className="mt-10">Some Projects:</p>
+                            <ul className="mt-10" style={{textAlign: "start"}}>
+                                <li>1) Scan application to insert data into your AMS.</li>
+                                <li>2) Email Reader, that can automate your workflow.</li>
+                            </ul>
+                </div>
+            );
+        }
+    }
+
     return (
-        <div className="wall">
+        <div className={windowSize>800 ? "wall" : ""}>
             <NavBar />
+            <div className={windowSize> 800 ? "h-100" : "mini"}>
    {/* Grid 1 */}
             <div className={windowSize>800 ? "grid-proj-1" : ""}>
     {/* DJ */}
-                <div className="red">
+                <div className="red ofh">
                     <h2 >DJ Amplifire</h2>
                     <div>
                         <p className="mt-10">DJAmplifire is a site where you can host or join a room. Through the Spotify API the site can connect to all your devices, and allows you to jam out with your favorite DJ. Once you create a room you will get a code that you can share with others so that they can join your room.</p>
@@ -45,7 +74,7 @@ function Projects() {
     {/* End of DJ */}
     
     {/* MarchM */}
-                <div className="red">
+                <div className="red ofh">
                    <h2>March Madness SurvivorPool</h2>
                    <div>
                         <p className="mt-10">A Survivor Pool for your favorite March Tourney. Each day of the tournament you have to pick a team to win. Once you pick a team, you will not be able to use that team for the rest of the tourney. Once a team you picked losses you are eliminated.</p>
@@ -67,7 +96,7 @@ function Projects() {
     {/* End of MarchM */}
     
     {/* Nova */}
-                <div className="red">
+                <div className="red ofh">
                     <h2>Nova Games</h2>
                     <div >
                         <p className="mt-10">NOVA Games is an e-Commerce application for video games. Group project where we implemented a Microservices Architech. I was the devOps Lead, that built the CI/CD pipeline with Jenkins, Docker, and AWS.</p>
@@ -94,7 +123,7 @@ function Projects() {
 
 
     {/* Grid 2 */}
-            <div className={windowSize>700 ? "grid-proj-2" : ""}>
+            <div className={windowSize>800 ? "grid-proj-2" : ""}>
     {/* Airline */}
                 <div className="red">
                     <h2>Gautier Airlines</h2>
@@ -121,11 +150,7 @@ function Projects() {
                         <p className="mt-10">With my background in insurance, I love to use technology to solve problems in the insurance industry</p>
                         <p className="mt-10">I don't have any of my insurance projects online, due to privacy.</p>
                         <p> A lot of my projects are invovled around Natural Language Processing (NLP). I am using AI, so that A LOT of data entry can be eliminated with Automation.</p>
-                        <p className="mt-10">Some Projects:</p>
-                        <ul className="mt-10" style={{textAlign: "start"}}>
-                            <li>1) Scan application to insert data into your AMS.</li>
-                            <li>2) Email Reader, that can automate your workflow.</li>
-                        </ul>
+                        {someProjects()}
                     </div>
                 </div>
     {/* End of Insurance */}
@@ -134,16 +159,30 @@ function Projects() {
                 <div className="red">
                     <h2>Outlook Add-in w/ React</h2>
                     <div>
-                        
+                        <p >This project is where I played around with creatign a Outlook Add-in with React.</p>
+                        <h5 ><a href="https://github.com/TCON163/OutlookReact/tree/main/My%20Office%20Add-ins">GitHub Repository</a></h5>
+                        <p >I really enjoyed using this setup to see what all data you can grab from Outlook with your react add-in. </p>
+
                     </div>
                 </div>
     {/* End of Outlook */}
     
     {/* Staging */}
-                <div className="red">Counsultant Employee Management</div>
+                <div className="red">
+                    <h2>Counsultant Employee Management</h2>
+                    <div>
+                        <p className="mt-10">This is a system used to manage employees for a consulting company.</p>
+                        <p className="mt-10">I developed the document mangaement system for this project. I also have a brach where I redid the data structure of the backend. </p>
+                        <h5 ><a href="https://github.com/Client-Portal-Project/Backend-Java">GitHub Repository - main</a></h5>
+                        <h5 ><a href="https://github.com/Client-Portal-Project/Backend-Java/tree/TCON2">GitHub Repository - my branch</a></h5>
+  
+                    </div>
+                
+                </div>
     {/* End of Staging */}
             </div>
-    {/* Grid 2 */}
+    {/* End ofGrid 2 */}
+        </div>
            
         </div>
     );

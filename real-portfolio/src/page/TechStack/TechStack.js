@@ -17,7 +17,7 @@ function TechStack(){
         <div className="wall">
             <NavBar />
     {/* Grid */}
-            <div className={windowSize > 700 ? "grid-ts": "reg"}>
+            <div className={windowSize > 800 ? "grid-ts": "reg"}>
 
     {/* Cloud */}
                 <div className="g-box cloud">
