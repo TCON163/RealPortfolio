@@ -1,0 +1,40 @@
+.grid-home {
+    position: fixed;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 58% 42% ;
+    grid-template-rows: 25%  25% 25% 25%;
+}
+
+
+.about-me{
+    border: solid 5px red;
+    grid-row-start: 1;
+    text-align: center;
+}
+
+.pics {
+    border: solid 5px green;
+    
+}
+
+.general-info {
+    border: solid 5px yellow;
+    grid-row: 1 / 4;
+}
+
+.work-experince {
+    border: solid 5px black;
+    grid-row: 3/ span 2;
+}
+
+.at{
+    font-size: 125px;
+}
+
+.bout-me {
+    font-size: 100px;
+}
