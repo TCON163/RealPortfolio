@@ -49,3 +49,9 @@
     text-align: center;
     
 }
+
+.main-li {
+    text-align: start;
+  
+    margin-left:  150px;
+}
