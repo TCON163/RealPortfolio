@@ -85,6 +85,7 @@ label { margin-right: 10px; }
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
+  margin-bottom: 50px;
 }
 
 .button-1:hover,
@@ -104,7 +105,7 @@ label { margin-right: 10px; }
 .sub-banner{
     text-align: center;
     color: white;
-    margin-bottom: 50px;
+  
 }
 
 

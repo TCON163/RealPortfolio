@@ -18,8 +18,9 @@ class PortCube extends React.Component {
         <NavBar />
         <h1 className='banner'>FullStack Software Engineer</h1>
         <h3 className='sub-banner'>Rotate cube to check out some projects. Does not work on mobile :(</h3>
+        
         <center>
-            
+        <button className='proceed button-1'><Link to="/home"> Proceed to HomePage</Link></button>
             <div
             style={{
                 width: 300,
@@ -29,36 +30,36 @@ class PortCube extends React.Component {
 
             <Cube size={300} index="front">
                 <div>
-                  <a href='https://dj.tcon.app' className='cube-link'>
-                  <img src={one} alt="one" style={{width: '300px', height: '300px'}} />
-                  </a>
+                 
+                  <img src={six} alt="one" style={{width: '300px', height: '300px'}} />
+                  
                 </div>
                 <div>
                   <img src={two} alt="two" style={{width: '300px', height: '300px'}}/>
                 </div>
                 <div>
-                  <a href='https://nova.tcon.app' className='cube-link' >
+                  
                     <img src={three} alt="two" style={{width: '300px', height: '300px'}}/>
-                  </a>
+                 
                 </div>
                 <div>
-                  <a href='https://airline.tcon.app' className='cube-link'>
+                 
                     <img src={four} alt="two" style={{width: '300px', height: '300px'}}/>
-                  </a>
+                 
                 </div>
                 <div>
-                  <a href='https://survivorpool.tcon.app'className='cube-link'>
+                  
                     <img src={five} alt="two" style={{width: '300px', height: '300px'}}/>
-                  </a>
+             
                 </div>
                 <div>
-                  <a href='https://github.com/TCON163'className='cube-link'>
-                    <img src={six} alt="two" style={{width: '300px', height: '300px'}}/>
-                  </a>
+                 
+                    <img src={one} alt="two" style={{width: '300px', height: '300px'}}/>
+               
                 </div>
             </Cube>
             </div>
-            <button className='proceed button-1'><Link to="/home"> Proceed to HomePage</Link></button>
+           
         </center>
 
         
