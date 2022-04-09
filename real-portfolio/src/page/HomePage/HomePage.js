@@ -1,7 +1,18 @@
 import "./HomePage.css"
 import NavBar from "../../utils/NavBar";
+import {useEffect, useState} from 'react';
 
 function HomePage(){
+
+    const [windowSize, setWindowSize] = useState(window.innerWidth);
+
+    useEffect(()=>{
+        window.addEventListener("resize", ()=>{
+            setWindowSize(window.innerWidth)
+        })
+    }, [])
+
+
     return (
         <div className="wall">
             <NavBar />
@@ -10,7 +21,7 @@ function HomePage(){
     {/* About Me */}
                 <div className="about-me">
                     <div className="v-center">
-                        <p className="a-me"><span className="at">@</span><span className="bout-me">bout me</span></p>
+                        <p className="a-me"><span className={windowSize > 901 ? "at": "at2"}>@</span><span className={windowSize > 901 ? "bout-me": "bout-me2"}>bout me</span></p>
                     </div>
                     
                 </div>

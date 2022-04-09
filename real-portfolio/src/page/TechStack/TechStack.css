@@ -1,0 +1,51 @@
+.grid-ts {
+    position: fixed;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.34% ;
+    grid-template-rows: 25% 25% 25% 25%;
+}
+.reg{
+    position: fixed;
+    top: 65px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+.cloud {
+    border: solid 5px red;
+
+    grid-row: 1 / span 2;
+}
+
+.devOps {
+    border: solid 5px red;
+    grid-row: 1 / span 2;
+    grid-column-start: 3;
+}
+
+.backEnd{
+    border: solid 5px red;
+    grid-row: 2 / span 2;
+}
+
+.frontEnd{
+    border: solid 5px red;
+    grid-column-start: 1;
+    grid-row: 3 / span 2;
+}
+
+.dataB{
+    border: solid 5px red;
+    grid-column-start: 3;
+    grid-row: 3 / span 2;
+}
+
+.g-box{
+    text-align: center;
+    
+}

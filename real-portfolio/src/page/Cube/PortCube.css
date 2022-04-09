@@ -54,12 +54,10 @@
 
 label { margin-right: 10px; }
 
-
-.proceed {
-    margin-top: 100px;
-
-  
+.t-banner {
+  margin-top: 50px;
 }
+
 .button-1 {
   background-color: #EA4C89;
   border-radius: 8px;
@@ -85,7 +83,7 @@ label { margin-right: 10px; }
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .button-1:hover,
@@ -98,7 +96,7 @@ label { margin-right: 10px; }
     text-align: center;
     color: white;
   
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
 }
 

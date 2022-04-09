@@ -17,10 +17,11 @@ class PortCube extends React.Component {
       <div className='landing wall'>
         <NavBar />
         <h1 className='banner'>FullStack Software Engineer</h1>
-        <h3 className='sub-banner'>Rotate cube to check out some projects. Does not work on mobile :(</h3>
+        <h3 className='sub-banner t-banner'>Rotate cube to check out some projects. </h3>
+        <h3 className='sub-banner'>Does not work on mobile :(</h3>
         
         <center>
-        <button className='proceed button-1'><Link to="/home"> Proceed to HomePage</Link></button>
+        <button className='proceed button-1'><Link to="/home"> Proceed to Home Page</Link></button>
             <div
             style={{
                 width: 300,

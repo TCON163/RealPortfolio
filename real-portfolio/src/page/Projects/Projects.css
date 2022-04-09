@@ -1,0 +1,24 @@
+.grid-proj-1 {
+    width: 100%;
+    height: 56%;
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.34% ;
+    grid-template-rows: 100%;
+
+    border: solid 5px green;
+}
+
+.grid-proj-2 {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 25%  25% 25% 25% ;
+    grid-template-rows: 100%;
+
+    border: solid 5px green;
+}
+
+.red {
+    border: solid 5px red;
+    text-align: center;
+}
