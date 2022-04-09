@@ -57,7 +57,41 @@ label { margin-right: 10px; }
 
 .proceed {
     margin-top: 100px;
+
+  
 }
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-1:hover,
+.button-1:focus {
+  background-color: #F082AC;
+}
+
 
 .banner {
     text-align: center;
@@ -73,16 +107,18 @@ label { margin-right: 10px; }
     margin-bottom: 50px;
 }
 
-.wall {
-  
-        background-image: url("../../assets/cloud-readme.jpg");
-        background-repeat: no-repeat;
-        background-size: cover;
-   
-    height: 100vh;
-    position: fixed;
-    top: 0px;
-    left: 0px;
- bottom: 0px;
- right:0px;
+
+
+.landing{
+  background-image: url("../../assets/cloud-readme.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cube-link {
+  /* position: absolute;
+  top: 75px;
+  right: 75px;
+  bottom: 75px;
+  left: 75px; */
 }
