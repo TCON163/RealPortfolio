@@ -7,29 +7,51 @@
     display: grid;
     grid-template-columns: 50% 50% ;
     grid-template-rows: 25%  25% 25% 25%;
+
+    background-color: black;
 }
 
 
 .about-me{
-    border: solid 5px red;
-    grid-row-start: 1;
+  
+    /* grid-row: 1 / span 2; */
+    grid-row-start: 2;
+
     text-align: center;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 
 .pics {
-    border: solid 5px green;
+    margin-top: 5px;
+
+    display: grid;
+    grid-template-columns: 50% 50% ;
+    grid-template-rows: 100%;
+
     
 }
 
 .general-info {
-    border: solid 5px yellow;
+  
     grid-row: 1 / 4;
+
+    overflow: auto;
+
+ 
+    
 }
 
+
+
 .work-experince {
-    border: solid 5px black;
+  
     grid-row: 3/ span 2;
+
+    text-align: center;
+
+    overflow: auto;
+    
+    
 }
 
 .at{
@@ -50,10 +72,16 @@
 
 
 
+
 .links-grid {
+
+   
+
     display: grid;
     grid-template-columns: 35% 30% 35% ;
     grid-template-rows: 100%;
+    margin: 35px 0px;
+
 
    width: 100%;
    text-align: center;
@@ -72,3 +100,94 @@
 
 
 
+.pic {
+    
+    margin: auto;
+    display: block;
+    
+}
+
+
+.info {
+    margin: 0px 25px;
+}
+
+.company{
+    font-weight: 400;
+}
+
+
+
+
+.mini1 {
+    overflow: scroll;
+    height: 90%;
+    position: fixed;
+    top: 65px;
+    background-color: black;
+}
+
+
+
+#about {
+    color: yellow;
+
+    margin-top: 30px;
+}
+
+
+
+.grid-home p {
+    color: white;
+    font-size: 20px;
+}
+
+.grid-home h3{
+    color: purple;
+}
+
+.grid-home li{
+    color: white;
+    font-size: 20px;
+    margin: 5px;
+}
+
+
+
+.mini1 p {
+    color: white;
+}
+.mini1 h3 {
+    color: purple;
+}
+.mini1 li {
+    color: white;
+    font-size: 18px;
+    margin: 5px;
+}
+.mini1 a {
+    color: white;
+}
+
+
+.links-grid a {
+    color: yellow;
+    
+    font-size: 25px;
+    
+}
+
+#rev {
+    margin-top: -15px;
+    margin-left: -200px;
+}
+
+#rev1{
+    margin-top: -15px;
+   
+}
+
+
+.work-experince h3 {
+    margin-left: -150px; 
+}

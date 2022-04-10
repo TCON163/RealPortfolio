@@ -8,9 +8,14 @@ import './App.css';
 import PortCube from "./page/Cube/PortCube";
 import Projects from "./page/Projects/Projects";
 import Contact from "./page/Contact/Contact";
+import DeviceDetector from "./utils/DeviceDetector";
 
 
 function App() {
+
+  
+
+
   return (
     <Router>
     
@@ -20,13 +25,14 @@ function App() {
 
 
         <Route   path='/home' element={<HomePage/>} />
-        <Route exact path="/" element={<PortCube/>} />
+          <Route exact path="/" element={<PortCube/>} />
       
 
-
+        <Route path="/t" element={<DeviceDetector/>} />
         <Route path="/techstack" element={<TechStack />}/>
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
+        
 
     </Routes>
     </Router>

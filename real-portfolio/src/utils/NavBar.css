@@ -1,14 +1,15 @@
 .header {
-    background-color: white;
-  
+    background-color: purple;
+    
     width: 100%;
-    border: 5px solid blue;
+    
 
     position: fixed;
     left: 0;
     top:0;
-    height: 55px;
+    height: 65px;
     white-space: nowrap;
+    
 }
 
 .header li {
@@ -29,5 +30,94 @@
 
 .nav-link {
     margin: 0px 35px;
+    color: white;
+}
+
+.menu-wall {
+    position: fixed;
+    top: 0px;
+    height: 100vh; 
+    width: 50%;
+    left: 0px;
+
+    z-index: 1;
+}
+
+.menu {
+    position: fixed;
+    top:65px;
+   
+    width: 50%;
+    background-color: purple;
+    height: 100%;
+    z-index: 2;
+    border: solid 10px black;
+}
+
+.menu-item {
+    z-index: 8; 
+    color: white;
+    margin: 100px 0px;
+}
+
+
+
+
+.button-2 {
+    background-color: black;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 35px;
+    width: 35px;
+    line-height: 20px;
+    list-style: none;
+  
+    outline: none;
+    
+    position: fixed;
+    text-align: center;
+    text-decoration: none;
+    transition: color 100ms;
+    vertical-align: baseline;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    z-index: 25;
+    top: 14px;
+    left: 17px;
+    /* margin-bottom: 100px; */
+  }
+  
+  .button-2:hover {
+    background-color: purple;
+  }
+
+
+  .icon-1{ 
+      background-color: white;
+      position: relative;
+      top: -1px;
+      left: -1px;
+      width: 25px;
+      height: 2px;
+      margin: 5px 0px;
+  }
+
+
+  .icon-2{ 
+   color: white;
+   font-size: 35px;
+   
+   position: relative;
+
+   
+    
 }
 

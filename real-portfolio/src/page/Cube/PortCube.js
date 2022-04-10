@@ -10,18 +10,31 @@ import six from '../../assets/Github.PNG';
 import { Link } from 'react-router-dom';
 import NavBar from '../../utils/NavBar';
 
+import { isMobile } from "react-device-detect";
+
 
 class PortCube extends React.Component {
+
+
+
   render() {
+
+    if(isMobile){
+      window.location = "home"
+
+      return <></>;
+    }
+
+
     return (
       <div className='landing wall'>
         <NavBar />
         <h1 className='banner'>FullStack Software Engineer</h1>
         <h3 className='sub-banner t-banner'>Rotate cube to check out some projects. </h3>
-        <h3 className='sub-banner'>Does not work on mobile :(</h3>
+
         
         <center>
-        <button className='proceed button-1'><Link to="/home"> Proceed to Home Page</Link></button>
+        <button className='proceed button-1' style={{color: "white"}}><Link to="/home" style={{color: "white", fontSize: "20px"}}> Proceed to Home Page</Link></button>
             <div
             style={{
                 width: 300,

@@ -16,12 +16,14 @@ function TechStack(){
     return(
         <div className="wall">
             <NavBar />
+            <div className={windowSize> 700 ? "h-100" : "scroll"}>
     {/* Grid */}
-            <div className={windowSize > 800 ? "grid-ts": "reg"}>
+            <div className={windowSize > 700 ? "grid-ts": ""}>
 
     {/* Cloud */}
                 <div className="g-box cloud">
-                    <h2>Cloud</h2>
+                    <h2 className="ts-title">Cloud</h2>
+                    <div className="card">
                     <ul>
                         <li>
                             AWS
@@ -31,6 +33,7 @@ function TechStack(){
                             Microsoft Azure
                         </li>
                     </ul>
+                    </div>
                 </div>
     {/* End of Cloud */}
 
@@ -40,20 +43,22 @@ function TechStack(){
     {/* DevOps */}
                 <div className="g-box devOps">
                   
-                    <h2>DevOps</h2>
+                    <h2 className="ts-title">DevOps</h2>
+                    <div className="card">
                     <ul>
                         <li>Jenkins</li>
                         <li>Docker</li>
                         <li>Jacoco</li>
                     </ul>
+                    </div>
                 </div>
     {/* End of DevOps */}
     {/* Backend */}
             
                 <div className="g-box backEnd">
                 
-                    <h2>Backend</h2>
-
+                    <h2 className="ts-title">Backend</h2>
+                    <div className="card">
                     <ul>
                         <li className="main-li">
                         Java
@@ -84,12 +89,14 @@ function TechStack(){
                             </ul>
                         </li>
                     </ul>
+                    </div>
                 </div>
     {/* End of Backend */}
     {/* Frontend */}
                
                 <div className="g-box frontEnd">
-                   <h2>Frontend</h2>
+                   <h2 className="ts-title">Frontend</h2>
+                   <div className="card">
                    <ul>
                        <li className="main-li">
                            JavaScript
@@ -104,21 +111,24 @@ function TechStack(){
                             </ul>
                         </li>
                    </ul>
+                   </div>
                 </div>
     {/* End ofFrontend */}
     {/* Databases */}
                 <div className="g-box dataB">
-                    <h2>Databses</h2>
+                    <h2 className="ts-title">Databses</h2>
+                    <div className="card">
                         <ul>
                             <li>MariaDB</li>
                             <li>Postgres</li>
                             <li>MySQL</li>
                         </ul>
-
+                        </div>
                 </div>
     {/* End of Databases */}
             </div>
     {/* End of Grid */}
+        </div>
         </div>
     )
 }
