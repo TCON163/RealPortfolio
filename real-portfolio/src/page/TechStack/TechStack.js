@@ -61,13 +61,13 @@ function TechStack(){
                     <div className="card">
                     <ul>
                         <li className="main-li">
-                        Java
+                        Java:
                         <ul>
                             <li>
                                 Spring
                             </li>
                             <li>
-                                Microservices
+                                Microservices:
                                 <ul>
                                     <li>
                                         Eureka
@@ -78,7 +78,7 @@ function TechStack(){
                         </ul>
                         </li>
                         <li className="main-li">
-                            Python
+                            Python:
                             <ul>
                                 <li>
                                     Django
@@ -99,13 +99,13 @@ function TechStack(){
                    <div className="card">
                    <ul>
                        <li className="main-li">
-                           JavaScript
+                           JavaScript:
                            <ul>
                                 <li>React</li>
                            </ul>                        
                         </li>
                         <li className="main-li">
-                            TypeScript
+                            TypeScript:
                             <ul>
                                 <li>Angular</li>
                             </ul>

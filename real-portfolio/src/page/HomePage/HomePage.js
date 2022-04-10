@@ -23,7 +23,7 @@ function HomePage(){
             <div className={windowSize>825 ? "grid-home" : ""}>
 
                 <div className="v-center" style={{marginTop: "30px"}}>
-                    <img alt="me" src={tyler} style={{border: "solid 3px white"}}></img>
+                    <img alt="me" src={tyler} style={{borderBottom: "solid 3px white"}}></img>
                 </div>
 
     {/* About Me */}
@@ -74,7 +74,7 @@ function HomePage(){
     {/* End of Pics and interest */}
     {/* Work Experince */}
                 <div className="work-experince">
-                    <h3  style={{textAlign: "center", color: "purple", fontSize: "30px", marginLeft: "25px"}}>Tech Experince</h3>
+                    <h3  style={{textAlign: "center", color: "purple", fontSize: "24px", marginLeft: "25px"}}>Tech Experince</h3>
                     <ul style={{marginTop: "-20px"}}>
                         <li>
                             <h3 >InfoSys - 01/2022 to present</h3>
