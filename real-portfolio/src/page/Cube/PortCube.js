@@ -30,7 +30,7 @@ class PortCube extends React.Component {
       <div className='landing wall'>
         <NavBar />
         <h1 className='banner'>FullStack Software Engineer</h1>
-        <h3 className='sub-banner t-banner'>Rotate cube to check out some projects. </h3>
+        <h3 className='sub-banner t-banner'>Rotate cube to check out some projects! </h3>
 
         
         <center>
