@@ -29,7 +29,7 @@ class PortCube extends React.Component {
     return (
       <div className='landing wall'>
         <NavBar />
-        <h1 className='banner'>FullStack Software Engineer</h1>
+        <h1 className='banner'>FullStack Java Developer</h1>
         <h3 className='sub-banner t-banner'>Rotate cube to check out some projects! </h3>
 
         
